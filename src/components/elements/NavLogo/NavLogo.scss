@@ -1,0 +1,13 @@
+@use "@styles/abstracts"as a;
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  .logo__caption {
+    .logo__text {
+      font-weight: a.$fw-xbold;
+    }
+  }
+}
