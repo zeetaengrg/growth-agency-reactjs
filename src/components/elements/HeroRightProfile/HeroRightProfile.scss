@@ -1,0 +1,66 @@
+@use "@styles/abstracts"as a;
+
+.profile {
+  position: relative;
+  left: 10rem;
+  top: -2rem;
+  height: 9.2rem;
+  width: 9.2rem;
+  border-radius: 0.5rem;
+
+  .profile__img-wrapper {
+    position: absolute;
+    left: 7.5rem;
+    top: -1.5rem;
+    z-index: 1;
+    border-radius: 50%;
+    border: 2px solid rgba($color: a.$primary-clr-3, $alpha: 1);
+    height: 3rem;
+    width: 3rem;
+    box-shadow: a.$bs-secondary;
+
+    .profile__img {
+      height: 100%;
+      width: 100%;
+      border-radius: 50%;
+    }
+  }
+
+  .profile__wrapper {
+    position: absolute;
+    border: 1px solid a.$secondary-clr;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: a.$bs-primary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 9rem;
+    width: 9rem;
+    padding: 1rem 1.5rem;
+
+    .profile__heading {
+      font-size: a.$fs-small;
+    }
+
+    .profile__body {
+      display: flex;
+      flex-direction: column;
+
+      .profile__body-text {
+        font-size: a.$fs-xsmall;
+      }
+
+      .profile__body-number {
+        margin-top: 0.25rem;
+        font-size: a.$fs-medium;
+        font-weight: a.$fw-bold;
+        background: a.$bg-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}

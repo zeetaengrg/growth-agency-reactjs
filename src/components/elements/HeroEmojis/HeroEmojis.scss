@@ -1,0 +1,18 @@
+@use "@styles/abstracts"as a;
+
+.emojis {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: a.$bs-primary;
+  width: fit-content;
+  position: absolute;
+  top: 23rem;
+  left: 21rem;
+
+  .img {
+    width: 5rem;
+    height: 5rem;
+  }
+}

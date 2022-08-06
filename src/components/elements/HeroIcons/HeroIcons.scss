@@ -1,0 +1,17 @@
+@use "@styles/abstracts"as a;
+
+.icons {
+  display: flex;
+  gap: 0.5rem;
+
+  .icon {
+    border: 1px solid hsla(228, 33%, 61%, 1);
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    cursor: pointer;
+    color: a.$primary-clr-3;
+    display: grid;
+    place-items: center;
+  }
+}

@@ -1,0 +1,128 @@
+@use "@styles/abstracts"as a;
+
+.data {
+  position: absolute;
+  top: 9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: a.$bs-primary;
+  height: 15rem;
+  width: 17rem;
+  padding: 1.5rem;
+
+  .data__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-header {
+      font-size: a.$fs-small;
+      font-weight: a.$fw-medium;
+    }
+  }
+
+  .data__center {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    &-num {
+      font-size: a.$fs-base;
+    }
+
+    &-followers {
+      font-size: a.$fs-xsmall;
+    }
+  }
+
+  .data__btm {
+    position: relative;
+
+    .data__btm-top {
+      @mixin bar {
+        position: absolute;
+        bottom: 0.5rem;
+        z-index: 1;
+        width: 0.4rem;
+        border-top-left-radius: 0.3rem;
+        border-top-right-radius: 0.3rem;
+        background: a.$bg-gradient;
+      }
+
+      .data__bar:nth-child(1) {
+        @include bar;
+        left: 1.5rem;
+        height: 40%;
+      }
+
+      .data__bar:nth-child(2) {
+        @include bar;
+        left: 3rem;
+        height: 20%;
+      }
+
+      .data__bar:nth-child(3) {
+        @include bar;
+        left: 4.5rem;
+        height: 80%;
+      }
+
+      .data__bar:nth-child(4) {
+        @include bar;
+        left: 6rem;
+        height: 60%;
+      }
+
+      .data__bar:nth-child(5) {
+        @include bar;
+        left: 7.5rem;
+        height: 50%;
+      }
+
+      .data__bar:nth-child(6) {
+        @include bar;
+        left: 9rem;
+        height: 60%;
+      }
+
+      .data__bar:nth-child(7) {
+        @include bar;
+        left: 10.5rem;
+        height: 70%;
+      }
+
+      .data__bar:nth-child(8) {
+        @include bar;
+        left: 12rem;
+        height: 45%;
+      }
+
+      .data__bar:nth-child(9) {
+        @include bar;
+        left: 13.5rem;
+        height: 85%;
+      }
+    }
+
+    .data__btm-btm {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      font-size: a.$fs-xsmall;
+
+      .data__btm-scale {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        .hr__line {
+          opacity: 0.5;
+          width: 100%;
+          background: a.$primary-clr-3;
+        }
+      }
+    }
+  }
+}

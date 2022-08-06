@@ -1,0 +1,58 @@
+@use "@styles/abstracts"as a;
+
+.growth {
+  position: absolute;
+  top: 17rem;
+  left: 18rem;
+  height: 5rem;
+  width: 20rem;
+  box-shadow: a.$bs-primary;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  display: flex;
+  gap: 1rem;
+
+  .growth__left {
+    flex: 1;
+    background-color: rgba($color: a.$primary-clr-3, $alpha: 0.2);
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .growth__left-text {
+      font-size: a.$fs-large;
+      font-weight: a.$fw-medium;
+    }
+  }
+
+  .growth__right {
+    flex: 3;
+
+    .growth__header {
+      font-size: a.$fs-small;
+    }
+
+    .growth__horizontal-bar {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-top: 0.5rem;
+
+      .growth__bar:nth-child(1) {
+        background: a.$bg-gradient;
+        height: 0.4rem;
+        width: 100%;
+        border-radius: 0.3rem;
+      }
+
+      .growth__bar:nth-child(2) {
+        background: a.$bg-gradient;
+        height: 0.4rem;
+        width: 70%;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}
