@@ -1,5 +1,5 @@
 @use "abstracts"as a;
-@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 // Reset
 *,
@@ -16,6 +16,8 @@ ul {
 
 a {
   text-decoration: none;
+  color: inherit;
+  font-weight: a.$fw-normal;
 }
 
 // Base Styling
