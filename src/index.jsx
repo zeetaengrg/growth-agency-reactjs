@@ -1,13 +1,19 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import { createRoot } from "react-dom/client";
+import { BrowserRouter as Router } from "react-router-dom";
 import App from "./App";
 import { Layout } from "@components/layouts";
 import "@styles/globals.scss";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  // <React.StrictMode>
+  <Router>
     <Layout>
       <App />
     </Layout>
-  </React.StrictMode>
+  </Router>
+  // </React.StrictMode>
 );
