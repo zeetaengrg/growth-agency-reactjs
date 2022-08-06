@@ -1,0 +1,12 @@
+// Flex with flex-direction
+@mixin flex-direction($direction) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+// Flex with both vertical and horizontal centering
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
