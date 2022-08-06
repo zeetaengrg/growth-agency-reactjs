@@ -1,3 +1,11 @@
 export { default as NavLinkItem } from "./NavLinkItem/NavLinkItem.jsx";
 export { default as NavLogo } from "./NavLogo/NavLogo.jsx";
 export { default as ActiveLink } from "./ActiveLink/ActiveLink.jsx";
+export { default as HeroAsideImg } from "./HeroAsideImg/HeroAsideImg.jsx";
+export { default as HeroLeftColumn } from "./HeroLeftColumn/HeroLeftColumn.jsx";
+export { default as HeroRightProfile } from "./HeroRightProfile/HeroRightProfile.jsx";
+export { default as HeroFollowerData } from "./HeroFollowerData/HeroFollowerData.jsx";
+export { default as HeroMediaType } from "./HeroMediaType/HeroMediaType.jsx";
+export { default as HeroIcons } from "./HeroIcons/HeroIcons.jsx";
+export { default as HeroFollowerGrowth } from "./HeroFollowerGrowth/HeroFollowerGrowth.jsx";
+export { default as HeroEmojis } from "./HeroEmojis/HeroEmojis.jsx";
