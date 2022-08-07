@@ -13,16 +13,12 @@
     left: 7.5rem;
     top: -1.5rem;
     z-index: 1;
-    border-radius: 50%;
-    border: 2px solid rgba($color: a.$primary-clr-3, $alpha: 1);
     height: 3rem;
     width: 3rem;
-    box-shadow: a.$bs-secondary;
 
     .profile__img {
-      height: 100%;
-      width: 100%;
-      border-radius: 50%;
+      box-shadow: a.$bs-secondary;
+      @include a.card-profile-img;
     }
   }
 
