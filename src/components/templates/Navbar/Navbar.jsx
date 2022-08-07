@@ -7,7 +7,7 @@ const Navbar = () => {
   const linksItem = ["Home", "About Us", "Services", "Contact Us"];
 
   return (
-    <header className="nav">
+    <header className="nav" id="navbar">
       <NavLogo />
       <nav className="nav__links" aria-labelledby="primary-navigation">
         <ul className="nav__items">
