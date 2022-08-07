@@ -1,4 +1,10 @@
+import "./ContactUs.scss";
+
 const ContactUs = () => {
-  return <div>ContactUs</div>;
+  return (
+    <section className="contact-us">
+      <h1 className="contact-us__header">Contact Us</h1>
+    </section>
+  );
 };
 export default ContactUs;
