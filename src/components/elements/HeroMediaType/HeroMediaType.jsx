@@ -1,3 +1,4 @@
+import pieChart from "@assets/images/pie-chart.svg";
 import { HeroIcons } from "@components/elements";
 import "./HeroMediaType.scss";
 
@@ -9,8 +10,9 @@ const HeroMediaType = () => {
         <HeroIcons />
       </div>
       <div className="media__body">
-        <div className="media__circle-top"></div>
-        <div className="media__circle-btm"></div>
+        <figure className="media__pie">
+          <img src={pieChart} alt="Pie Chart" className="media__pie-chart" />
+        </figure>
         <div className="media__tooltip">
           <p className="media__tooltip-text">
             72.3% of the media for #sunrise are photos.
