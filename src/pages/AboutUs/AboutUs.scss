@@ -1,0 +1,21 @@
+@use "@styles/abstracts"as a;
+
+.about {
+  @include a.flex-center;
+  flex-direction: column;
+  padding: 1.5rem 20rem;
+  gap: 1rem;
+
+  .about__header {
+    font-size: a.$fs-xlarge;
+  }
+
+  .about__description {
+    &::first-letter {
+      font-size: a.$fs-large;
+      line-height: 1;
+      font-weight: a.$fw-bold;
+      color: a.$primary-clr-3;
+    }
+  }
+}

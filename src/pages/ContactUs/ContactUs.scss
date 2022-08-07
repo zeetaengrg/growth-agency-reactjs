@@ -1,0 +1,10 @@
+@use "@styles/abstracts"as a;
+
+.contact-us {
+  @include a.flex-center;
+  height: calc(100vh - 14rem);
+
+  .contact-us__header {
+    font-size: a.$fs-xlarge;
+  }
+}
