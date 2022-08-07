@@ -1,4 +1,4 @@
-import { Navbar, Footer } from "@components/templates";
+import { Footer, Navbar } from "@components/templates";
 
 const Layout = ({ children }) => {
   return (
