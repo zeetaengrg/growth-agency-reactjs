@@ -9,7 +9,7 @@ import "./HeroRightColumn.scss";
 
 const HeroRightColumn = () => {
   return (
-    <section class="right-col" id="hero-right-content">
+    <section className="right-col" id="hero-right-content">
       <HeroRightProfile />
       <HeroFollowerData />
       <HeroMediaType />
