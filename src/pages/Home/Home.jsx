@@ -8,6 +8,7 @@ import {
   WorkProcess,
   WorkWithUs,
 } from "@components/templates";
+import "./Home.scss";
 
 const Home = () => {
   return (
