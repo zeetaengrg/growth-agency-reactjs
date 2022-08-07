@@ -5,6 +5,6 @@ export { default as OurServices } from "./OurServices/OurServices.jsx";
 export { default as WorkProcess } from "./WorkProcess/WorkProcess.jsx";
 export { default as Pricing } from "./Pricing/Pricing.jsx";
 export { default as Testimonials } from "./Testimonials/Testimonials.jsx";
-export { default as WorkWithUs } from "./WorkWithUs/WorkWithUs.jsx";
+export { default as PortfolioStats } from "./PortfolioStats/PortfolioStats.jsx";
 export { default as Newsletter } from "./Newsletter/Newsletter.jsx";
 export { default as Footer } from "./Footer/Footer.jsx";
