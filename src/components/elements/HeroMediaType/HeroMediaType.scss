@@ -7,7 +7,7 @@
   height: 15rem;
   width: 17rem;
   box-shadow: a.$bs-primary;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 0.5rem;
 
   .media__top {
@@ -23,45 +23,28 @@
 
   .media__body {
     position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-    .media__circle-top {
-      border: 1.5rem solid a.$primary-clr-3;
-      border-radius: 50%;
-      height: 9rem;
-      width: 9rem;
-      position: absolute;
-      z-index: 1;
-    }
-
-    .media__circle-btm {
-      border: 0.75rem solid a.$primary-clr-2;
-      border-radius: 50%;
-      height: 9rem;
-      width: 9rem;
-      position: absolute;
-      z-index: 2;
+    .media__pie {
+      .media__pie-chart {
+        height: 14rem;
+      }
     }
 
     .media__tooltip {
       background-color: a.$primary-clr-1;
       position: relative;
-      left: -2rem;
-      z-index: 3;
+      top: -10rem;
+      left: -1rem;
+      z-index: 1;
       padding: 0.5rem;
-      width: 65%;
       border-radius: 0.3rem;
+      width: 8.5rem;
 
       .media__triangle {
         position: absolute;
         top: 2.5rem;
         left: 50%;
         transform: translateX(-50%);
-        width: 0;
-        height: 0;
         border-left: 0.5rem solid transparent;
         border-right: 0.5rem solid transparent;
         border-top: 0.5rem solid a.$primary-clr-1;
