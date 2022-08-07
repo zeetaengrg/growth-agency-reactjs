@@ -10,7 +10,7 @@
   box-shadow: a.$bs-primary;
   height: 15rem;
   width: 17rem;
-  padding: 1.5rem;
+  padding: 1rem 1.5rem;
 
   .data__top {
     display: flex;
@@ -43,7 +43,7 @@
     .data__btm-top {
       @mixin bar {
         position: absolute;
-        bottom: 0.5rem;
+        bottom: 0.4rem;
         z-index: 1;
         width: 0.4rem;
         border-top-left-radius: 0.3rem;
