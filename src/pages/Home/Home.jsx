@@ -6,7 +6,7 @@ import {
   Pricing,
   Testimonials,
   WorkProcess,
-  WorkWithUs,
+  PortfolioStats,
 } from "@components/templates";
 import "./Home.scss";
 
@@ -19,7 +19,7 @@ const Home = () => {
       <WorkProcess />
       <Pricing />
       <Testimonials />
-      <WorkWithUs />
+      <PortfolioStats />
       <Newsletter />
     </div>
   );
