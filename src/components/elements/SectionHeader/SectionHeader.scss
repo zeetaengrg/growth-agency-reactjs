@@ -1,0 +1,19 @@
+@use "@styles/abstracts"as a;
+
+.section__header {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+
+  .section__title {
+    @include a.header;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .section__subtitle {
+    @include a.subheader;
+    width: 60%;
+    margin: 0.5rem auto;
+  }
+}

@@ -1,0 +1,11 @@
+@use "@styles/abstracts"as a;
+
+.pricing {
+  @include a.flex-direction(column);
+  gap: 2rem;
+
+  .pricing__content {
+    @include a.flex-center;
+    gap: 2rem;
+  }
+}

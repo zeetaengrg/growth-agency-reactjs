@@ -1,0 +1,146 @@
+@use "@styles/abstracts"as a;
+
+.btm__card-bottom {
+  @include a.card;
+  position: relative;
+  gap: 2rem;
+
+  .btm__top-container {
+    @include a.card-content;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+
+    .btm__top-content {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .circle-icon {
+        font-size: 0.5rem;
+      }
+
+      .btm__earn,
+      .btm__pay {
+
+        .btm__earn-num,
+        .btm__pay-num {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+
+        .btm__earn-num {
+          .circle-icon {
+            color: orange;
+          }
+        }
+
+        .btm__pay-num {
+          .circle-icon {
+            color: a.$primary-clr-3;
+          }
+        }
+
+        .btm__earn-text,
+        .btm__pay-text {
+          padding-left: 1rem;
+          font-size: 0.7rem;
+          font-weight: 400;
+          color: rgb(151, 142, 142);
+        }
+      }
+    }
+
+    .btm__pie-chart {
+      margin: 0 auto;
+      display: flex;
+
+      .pie-two {
+        margin-top: 0.7rem;
+        margin-left: -0.5rem;
+      }
+    }
+
+    .btm__bottom-text {
+      margin: 0 auto;
+      text-align: center;
+
+      .btm__earning-num {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .btm__earning-text {
+        font-size: 0.7rem;
+        font-weight: 400;
+        color: rgb(151, 142, 142);
+      }
+    }
+  }
+
+  .btm__dashboard {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    background-color: a.$secondary-clr;
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 16rem;
+    right: 1rem;
+    height: 5rem;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+
+    .btm__dashboard-text {
+      text-align: center;
+      font-size: 0.8rem;
+      font-weight: 500;
+    }
+
+    .btm__bar-graph {
+      position: relative;
+      left: 0.5rem;
+
+      .btm__bar:nth-child(1) {
+        height: 2.5rem;
+        width: 0.5rem;
+        background: a.$primary-clr;
+        border-radius: 1rem;
+        position: absolute;
+        left: 0;
+        bottom: -2.5rem;
+      }
+
+      .btm__bar:nth-child(2) {
+        height: 1.25rem;
+        width: 0.5rem;
+        background: a.$bg-gradient;
+        border-radius: 1rem;
+        position: absolute;
+        bottom: -2.5rem;
+        left: 1rem;
+      }
+
+      .btm__bar:nth-child(3) {
+        height: 0.75rem;
+        width: 0.5rem;
+        background: a.$primary-clr;
+        border-radius: 1rem;
+        position: absolute;
+        bottom: -2.5rem;
+        left: 2rem;
+      }
+
+      .btm__bar:nth-child(4) {
+        height: 2.5rem;
+        width: 0.5rem;
+        background: a.$bg-gradient;
+        border-radius: 1rem;
+        position: absolute;
+        bottom: -2.5rem;
+        left: 3rem;
+      }
+    }
+  }
+}

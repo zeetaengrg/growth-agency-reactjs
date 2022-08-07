@@ -1,0 +1,11 @@
+@use "@styles/abstracts"as a;
+
+.ratings {
+  display: flex;
+  justify-content: center;
+
+  .ratings__icon {
+    font-size: a.$fs-small;
+    color: gold;
+  }
+}

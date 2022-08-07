@@ -1,0 +1,50 @@
+@use "@styles/abstracts"as a;
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  .testimonials__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .testimonials__carousel-btns {
+    display: flex;
+    margin: 0 auto;
+    gap: 1rem;
+    border: 1px solid a.$primary-clr-4;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2rem;
+    padding: 0.5rem;
+
+    @mixin carousel-btns {
+      color: a.$primary-clr-3;
+      font-size: 1.25rem;
+      border: 1px solid a.$primary-clr-3;
+      border-radius: 50%;
+      background: transparent;
+      padding: 0.5rem;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      display: grid;
+      place-items: center;
+
+      &:hover {
+        background: a.$bg-gradient;
+        color: white;
+      }
+    }
+
+    .testimonials__btn-prev {
+      @include carousel-btns;
+    }
+
+    .testimonials__btn-next {
+      @include carousel-btns;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.services {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+
+  .services__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 18rem;
+  }
+}

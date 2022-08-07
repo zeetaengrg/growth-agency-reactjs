@@ -1,0 +1,29 @@
+@use "@styles/abstracts"as a;
+
+.right__card-top {
+  @include a.card;
+  gap: 3rem;
+  position: relative;
+  padding: 4rem 0rem;
+
+  .right__price-content {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    padding: 1rem 0.5rem;
+    background: a.$bg-gradient;
+    border-radius: 1rem;
+
+    .right__price {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: a.$secondary-clr;
+    }
+  }
+
+  .right__top-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

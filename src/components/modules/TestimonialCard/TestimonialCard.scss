@@ -1,0 +1,35 @@
+@use "@styles/abstracts"as a;
+
+.testimonial__item--card {
+  background-color: white;
+  height: 12rem;
+  width: 17rem;
+}
+
+.testimonial__item {
+  @include a.flex-direction(column);
+  justify-content: space-between;
+  text-align: center;
+  gap: 1rem;
+  height: 10rem;
+  width: 15rem;
+  // background-color: rgba(255, 255, 255, 0.053);
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: 0px 41.04px 42.48px rgba(0, 0, 0, 0.053);
+
+  .testimonial__item-text {
+    font-size: a.$fs-xsmall;
+  }
+
+  .testimonial__client-wrapper {
+    .testimonial__client-name {
+      font-size: a.$fs-small;
+    }
+
+    .testimonial__client-location {
+      font-size: a.$fs-xsmall;
+    }
+  }
+}
