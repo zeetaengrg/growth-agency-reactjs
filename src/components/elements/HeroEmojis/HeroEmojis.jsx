@@ -5,10 +5,10 @@ import "./HeroEmojis.scss";
 
 const HeroEmojis = () => {
   return (
-    <article class="emojis">
-      <img src={surpriseEmoji} alt="Surprise Emoji" class="emoji" />
-      <img src={angryEmoji} alt="Angry Emoji" class="emoji" />
-      <img src={heartEmoji} alt="Heart Emoji" class="emoji" />
+    <article className="emojis">
+      <img src={surpriseEmoji} alt="Surprise Emoji" className="emoji" />
+      <img src={angryEmoji} alt="Angry Emoji" className="emoji" />
+      <img src={heartEmoji} alt="Heart Emoji" className="emoji" />
     </article>
   );
 };
