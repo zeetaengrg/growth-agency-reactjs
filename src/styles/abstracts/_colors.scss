@@ -1,12 +1,12 @@
-$primary-clr: #3E4581;
-$primary-clr-1: #293134;
-$primary-clr-2: #414148;
-$primary-clr-3: #ad66fa;
-$primary-clr-4: #eceeff;
+$primary-clr: hsl(234, 35%, 37%);
+$primary-clr-1: hsl(196, 12%, 18%);
+$primary-clr-2: hsl(240, 5%, 27%);
+$primary-clr-3: hsl(269, 94%, 69%);
+$primary-clr-4: hsl(234, 100%, 96%);
 
-$secondary-clr: #FCFCFF;
+$secondary-clr: hsl(240, 100%, 99%);
 
 $bg-gradient: linear-gradient(89.97deg,
-  #ae67fa 1.84%,
-  #f49867 102.67%),
-#3e4581;
+  hsl(269, 94%, 69%) 1.84%,
+  hsl(21, 87%, 68%) 102.67%),
+hsl(234, 35%, 37%);

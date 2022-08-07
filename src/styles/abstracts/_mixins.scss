@@ -27,6 +27,7 @@
 // Subheader Mixin
 @mixin subheader {
   line-height: 1.15;
+  font-weight: $fw-medium;
 }
 
 // Card Mixin
@@ -51,4 +52,12 @@
   border-radius: 1rem;
   width: 20rem;
   display: flex;
+}
+
+// Card Profile Image
+@mixin card-profile-img {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 2px solid $primary-clr-3;
 }
