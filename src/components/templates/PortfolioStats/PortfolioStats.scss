@@ -1,0 +1,55 @@
+@use "@styles/abstracts"as a;
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 4rem;
+  background-color: a.$primary-clr-4;
+  height: 100vh;
+
+  .portfolio__top-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10rem;
+
+    .portfolio__completed,
+    .portfolio__revenue,
+    .portfolio__customer {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+
+      .portfolio__num {
+        background: a.$bg-gradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: a.$fs-xlarge;
+        font-weight: a.$fw-bold;
+      }
+
+      .portfolio__text {
+        font-size: a.$fs-xsmall;
+        font-weight: a.$fw-light;
+      }
+    }
+  }
+
+  .portfolio__btn {
+    padding: 0.75rem 3rem;
+    background: a.$bg-gradient;
+    color: a.$secondary-clr;
+    border: none;
+    border-radius: 0.25rem;
+    font-weight: a.$fw-medium;
+    cursor: pointer;
+    transition: a.$tr-primary;
+
+    &:hover {
+      filter: brightness(110%) contrast(1);
+    }
+  }
+}
