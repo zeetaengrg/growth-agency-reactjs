@@ -1,5 +1,6 @@
 @use "../abstracts/fonts"as *;
 @use "../abstracts/colors"as *;
+@use "../abstracts/breakpoints"as *;
 
 // Flex with flex-direction
 @mixin flex-direction($direction) {
@@ -60,4 +61,13 @@
   width: 3rem;
   border-radius: 50%;
   border: 2px solid $primary-clr-3;
+}
+
+// Media Query
+@mixin media-query($key) {
+  $size: map.get($breakpoints, $key);
+
+  @media screen and (max-width: $size) {
+    @content;
+  }
 }
