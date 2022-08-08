@@ -23,3 +23,14 @@
     cursor: pointer;
   }
 }
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .nav {
+    .nav__items {
+      .nav__login-btn {}
+    }
+  }
+}
