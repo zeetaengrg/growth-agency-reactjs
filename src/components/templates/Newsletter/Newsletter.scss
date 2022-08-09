@@ -1,9 +1,7 @@
 @use "@styles/abstracts"as a;
 
 .newsletter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include a.flex-center;
   flex-direction: column;
   gap: 3rem;
   height: 70vh;
@@ -119,5 +117,41 @@
       font-size: a.$fs-small;
       text-decoration: underline;
     }
+  }
+}
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .newsletter {
+    height: 40vh;
+  }
+}
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .newsletter {
+    height: 50vh;
+
+    .newsletter__subscribe {
+      .newsletter__input {
+        width: 20rem;
+      }
+
+      .newsletter__btn-wrapper {
+        .cssbuttons-io-button {
+          padding-right: 2.5rem;
+          padding-left: 0.75rem;
+        }
+      }
+    }
+  }
+}
+
+// Media Query for small devices (less than 480px)
+@include a.media-query(small) {
+  .newsletter {
+    height: 65vh;
   }
 }

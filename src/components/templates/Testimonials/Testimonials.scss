@@ -1,14 +1,11 @@
 @use "@styles/abstracts"as a;
 
 .testimonials {
-  display: flex;
-  flex-direction: column;
+  @include a.flex-direction(column);
   gap: 3rem;
 
   .testimonials__items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include a.flex-center;
     gap: 1rem;
   }
 
@@ -45,6 +42,17 @@
 
     .testimonials__btn-next {
       @include carousel-btns;
+    }
+  }
+}
+
+//********MEDIA QUERY********
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .testimonials {
+    .testimonials__items {
+      flex-wrap: wrap;
     }
   }
 }

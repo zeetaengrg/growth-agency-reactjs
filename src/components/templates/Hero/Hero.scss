@@ -1,6 +1,32 @@
+@use "@styles/abstracts"as a;
+
 .hero {
   display: flex;
   padding: 7rem 4rem 0rem;
   position: relative;
   height: 85vh;
+}
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .hero {
+    flex-direction: column-reverse;
+    height: 55vh;
+  }
+}
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .hero {
+    height: 80vh;
+  }
+}
+
+// Media Query for small devices (less than 480px)
+@include a.media-query(small) {
+  .hero {
+    height: 165vh;
+  }
 }

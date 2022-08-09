@@ -1,8 +1,7 @@
 @use "@styles/abstracts"as a;
 
 .footer {
-  display: flex;
-  flex-direction: column;
+  @include a.flex-direction(column);
   gap: 1.5rem;
   font-size: a.$fs-xsmall;
   height: 18vh;
@@ -95,5 +94,64 @@
   .footer__bottom {
     margin: 0 auto;
     color: a.$primary-clr-3;
+  }
+}
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .footer {
+    height: 8vh;
+
+    .footer__aside {
+      bottom: 10rem;
+    }
+  }
+}
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .footer {
+    height: 10vh;
+
+    .footer__aside {
+      .footer__aside-star {
+        width: 3rem;
+        right: 7.5rem;
+        bottom: 2rem;
+      }
+
+      .footer__aside-arrow {
+        width: 9rem;
+      }
+    }
+  }
+}
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .footer {
+    height: 25vh;
+
+
+    .footer__aside {
+      display: none;
+    }
+
+    .footer__top {
+      flex-direction: column;
+      gap: 1.5rem;
+
+      .footer__nav {
+        ul {
+          gap: 1.5rem;
+        }
+      }
+    }
+
+    .footer__social-icons {
+      gap: 1rem;
+    }
   }
 }

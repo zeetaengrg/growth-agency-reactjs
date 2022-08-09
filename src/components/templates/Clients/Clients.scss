@@ -3,4 +3,35 @@
 .clients {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+}
+
+//********MEDIA QUERY********
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .clients {
+    .clients__logo {
+      margin: 0 auto;
+
+      .clients__logo-img {
+        width: 7rem;
+      }
+    }
+  }
+}
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .clients {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 0rem 1rem;
+
+    .clients__logo {
+      .clients__logo-img {
+        // width: 5rem;
+      }
+    }
+  }
 }

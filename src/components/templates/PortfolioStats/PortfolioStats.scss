@@ -1,9 +1,7 @@
 @use "@styles/abstracts"as a;
 
 .portfolio {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include a.flex-center;
   flex-direction: column;
   gap: 4rem;
   background-color: a.$primary-clr-4;
@@ -17,8 +15,7 @@
     .portfolio__completed,
     .portfolio__revenue,
     .portfolio__customer {
-      display: flex;
-      flex-direction: column;
+      @include a.flex-direction(column);
       gap: 0.5rem;
       text-align: center;
 
@@ -50,6 +47,46 @@
 
     &:hover {
       filter: brightness(110%) contrast(1);
+    }
+  }
+}
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .portfolio {
+    height: 50vh;
+  }
+}
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .portfolio {
+    height: 60vh;
+
+    .portfolio__top-content {
+      gap: 6rem;
+    }
+  }
+}
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .portfolio {
+    height: 70vh;
+    gap: 3rem;
+
+    .portfolio__top-content {
+      gap: 2rem;
+
+      .portfolio__completed,
+      .portfolio__revenue,
+      .portfolio__customer {
+        .portfolio__num {
+          font-size: a.$fs-large;
+        }
+      }
     }
   }
 }

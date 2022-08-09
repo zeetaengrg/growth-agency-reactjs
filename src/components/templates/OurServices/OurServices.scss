@@ -1,14 +1,43 @@
+@use "@styles/abstracts"as a;
+
 .services {
-  height: 100vh;
-  display: grid;
-  place-content: center;
+  @include a.flex-center;
+  flex-direction: column;
 
   .services__content {
-    display: flex;
+    @include a.flex-center;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem 18rem;
+    padding: 2rem 18rem 0rem;
+  }
+}
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .services {
+    .services__content {
+      padding: 2rem 10rem 0rem;
+    }
+  }
+}
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .services {
+    .services__content {
+      padding: 2rem 1rem 0rem;
+      gap: 1.5rem;
+    }
+  }
+}
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .services {
+    .services__content {
+      padding: 1rem 0rem;
+    }
   }
 }

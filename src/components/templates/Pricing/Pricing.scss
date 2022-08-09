@@ -7,5 +7,6 @@
   .pricing__content {
     @include a.flex-center;
     gap: 2rem;
+    flex-wrap: wrap;
   }
 }
