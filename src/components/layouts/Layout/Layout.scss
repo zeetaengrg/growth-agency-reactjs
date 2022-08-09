@@ -1,0 +1,14 @@
+@use "@styles/abstracts"as a;
+
+.main {
+  @include a.flex-direction(column);
+  gap: 6rem;
+}
+
+//********MEDIA QUERY********
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .main {
+    gap: 4rem;
+  }
+}

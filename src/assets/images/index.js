@@ -1,0 +1,10 @@
+export { default as planDay } from "./planday.svg";
+export { default as umbraco } from "./umbraco.svg";
+export { default as pearlFisher } from "./pearlfisher.svg";
+export { default as brightPearl } from "./brightpearl.svg";
+export { default as angryEmoji } from "./angry.svg";
+export { default as surpriseEmoji } from "./surprise.svg";
+export { default as heartEmoji } from "./heart.svg";
+export { default as arrow } from "./arrow-direction.svg";
+export { default as arrowPurple } from "./arrow-purple.svg";
+export { default as logo } from "./logo.svg";
