@@ -1,10 +1,10 @@
 @use "@styles/abstracts"as a;
 
-.services {
+.services-page {
   @include a.flex-center;
   height: calc(100vh - 14rem);
 
-  .services__header {
+  .services-page__header {
     font-size: a.$fs-xlarge;
   }
 }
