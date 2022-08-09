@@ -1,14 +1,35 @@
-import surpriseEmoji from "@assets/images/surprise.svg";
-import angryEmoji from "@assets/images/angry.svg";
-import heartEmoji from "@assets/images/heart.svg";
+import { surpriseEmoji, heartEmoji, angryEmoji } from "@assets/images";
 import "./HeroEmojis.scss";
 
 const HeroEmojis = () => {
+  const emojiList = [
+    {
+      id: 1,
+      name: "Surprise Emoji",
+      imgSrc: surpriseEmoji,
+    },
+    {
+      id: 2,
+      name: "Angry Emoji",
+      imgSrc: angryEmoji,
+    },
+    {
+      id: 3,
+      name: "Heart Emoji",
+      imgSrc: heartEmoji,
+    },
+  ];
+
   return (
     <article className="emojis">
-      <img src={surpriseEmoji} alt="Surprise Emoji" className="emoji" />
-      <img src={angryEmoji} alt="Angry Emoji" className="emoji" />
-      <img src={heartEmoji} alt="Heart Emoji" className="emoji" />
+      {emojiList.map((emoji) => (
+        <img
+          key={emoji.id}
+          src={emoji.imgSrc}
+          alt={emoji.name}
+          className="emoji"
+        />
+      ))}
     </article>
   );
 };
