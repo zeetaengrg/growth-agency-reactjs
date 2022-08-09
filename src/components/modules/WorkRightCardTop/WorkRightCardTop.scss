@@ -27,3 +27,21 @@
     gap: 1rem;
   }
 }
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .right__card-top {
+    width: 28rem;
+  }
+}
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .right__card-top {
+    padding: 2rem;
+    width: 22.5rem;
+    margin: 0 auto;
+  }
+}
