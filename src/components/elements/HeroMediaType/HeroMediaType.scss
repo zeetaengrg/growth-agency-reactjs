@@ -57,3 +57,14 @@
     }
   }
 }
+
+// ********MEDIA QUERY********
+
+// Media Query for small devices (less than 480px)
+@include a.media-query(small) {
+  .media {
+    top: 30rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

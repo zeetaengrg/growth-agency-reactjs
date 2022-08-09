@@ -34,3 +34,14 @@
     font-size: a.$fs-xsmall;
   }
 }
+
+//********MEDIA QUERY********
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .services__card {
+    padding: 0.5rem;
+    width: 10rem;
+    height: 10rem;
+  }
+}

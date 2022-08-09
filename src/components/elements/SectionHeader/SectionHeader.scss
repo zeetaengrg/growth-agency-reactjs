@@ -9,11 +9,42 @@
     @include a.header;
     width: 85%;
     margin: 0 auto;
+
   }
 
   .section__subtitle {
     @include a.subheader;
     width: 60%;
     margin: 0.5rem auto;
+  }
+}
+
+//********MEDIA QUERY********
+
+// Media Query for large devices (less than 1024px)
+@include a.media-query(large) {
+  .section__header {
+    width: 80%;
+  }
+}
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .section__header {
+    width: 100%;
+  }
+}
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .section__header {
+    .section__title {
+      font-size: a.$fs-xlarge;
+      width: 90%;
+    }
+
+    .section__subtitle {
+      width: 80%;
+    }
   }
 }

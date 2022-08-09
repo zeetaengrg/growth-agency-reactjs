@@ -4,12 +4,14 @@ import "./HeroMediaType.scss";
 
 const HeroMediaType = () => {
   return (
-    <div className="media">
+    <section className="media" aria-labelledby="media-header">
       <div className="media__top">
-        <h4 className="media__header">Media Type</h4>
+        <h4 id="media-header" className="media__header">
+          Media Type
+        </h4>
         <HeroIcons />
       </div>
-      <div className="media__body">
+      <article className="media__body">
         <figure className="media__pie">
           <img src={pieChart} alt="Pie Chart" className="media__pie-chart" />
         </figure>
@@ -19,8 +21,8 @@ const HeroMediaType = () => {
           </p>
           <span className="media__triangle"></span>
         </div>
-      </div>
-    </div>
+      </article>
+    </section>
   );
 };
 

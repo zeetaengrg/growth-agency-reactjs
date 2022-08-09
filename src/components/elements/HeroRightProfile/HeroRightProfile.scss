@@ -60,3 +60,24 @@
     }
   }
 }
+
+//********MEDIA QUERY********
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .profile {
+    left: 50%;
+    transform: translateX(-50%);
+
+    .profile__img-wrapper {
+      left: 6rem;
+      top: -2rem;
+    }
+
+    .profile__wrapper {
+      height: 7rem;
+      width: 7rem;
+      padding: 0.5rem 0.5rem;
+    }
+  }
+}

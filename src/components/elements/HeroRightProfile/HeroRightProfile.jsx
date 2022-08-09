@@ -3,7 +3,7 @@ import "./HeroRightProfile.scss";
 
 const HeroRightProfile = () => {
   return (
-    <div className="profile">
+    <section id="profile-container" className="profile">
       <figure className="profile__img-wrapper">
         <img className="profile__img" src={profileImg} alt="Profile" />
       </figure>
@@ -16,7 +16,7 @@ const HeroRightProfile = () => {
           <span className="profile__body-number">3,000</span>
         </div>
       </section>
-    </div>
+    </section>
   );
 };
 

@@ -68,3 +68,25 @@
     color: a.$primary-clr;
   }
 }
+
+//********MEDIA QUERY********
+
+// Media Query for medium devices (less than 768px)
+@include a.media-query(medium) {
+  .plan {
+    .plan__price {
+      font-size: a.$fs-large;
+    }
+  }
+}
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .plan {
+    gap: 1rem;
+
+    .plan__price {
+      font-size: a.$fs-medium;
+    }
+  }
+}
