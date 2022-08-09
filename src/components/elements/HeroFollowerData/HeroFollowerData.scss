@@ -126,3 +126,14 @@
     }
   }
 }
+
+//********MEDIA QUERY********
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .data {
+    top: 6.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
