@@ -1,10 +1,11 @@
 import { Footer, Navbar } from "@components/templates";
+import "./Layout.scss";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Navbar />
-      {children}
+      <main className="main">{children}</main>
       <Footer />
     </>
   );
