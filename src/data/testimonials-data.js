@@ -23,20 +23,20 @@ export const testimonialsData = [
     location: "Ontario, Canada",
     rating: 4.5,
   },
-  {
-    id: 4,
-    name: "Rocky Balboa",
-    message:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    location: "Mexico City, Mexico",
-    rating: 5,
-  },
-  {
-    id: 5,
-    name: "James Dean",
-    message:
-      "Up maids me an ample stood given. Certainty say suffering his him collected intention promotion. quis nostrud exercitation ullamco.",
-    location: "Madrid, Spain",
-    rating: 4.5,
-  },
+  // {
+  //   id: 4,
+  //   name: "Rocky Balboa",
+  //   message:
+  //     "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  //   location: "Mexico City, Mexico",
+  //   rating: 5,
+  // },
+  // {
+  //   id: 5,
+  //   name: "James Dean",
+  //   message:
+  //     "Up maids me an ample stood given. Certainty say suffering his him collected intention promotion. quis nostrud exercitation ullamco.",
+  //   location: "Madrid, Spain",
+  //   rating: 4.5,
+  // },
 ];

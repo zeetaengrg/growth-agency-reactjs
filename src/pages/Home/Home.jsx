@@ -8,11 +8,10 @@ import {
   WorkProcess,
   PortfolioStats,
 } from "@components/templates";
-import "./Home.scss";
 
 const Home = () => {
   return (
-    <div className="home">
+    <>
       <Hero />
       <Clients />
       <OurServices />
@@ -21,7 +20,7 @@ const Home = () => {
       <Testimonials />
       <PortfolioStats />
       <Newsletter />
-    </div>
+    </>
   );
 };
 
