@@ -27,6 +27,6 @@
 // Media Query for small devices (less than 480px)
 @include a.media-query(small) {
   .hero {
-    height: 165vh;
+    height: 175vh;
   }
 }
