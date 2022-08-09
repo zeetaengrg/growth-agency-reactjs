@@ -1,27 +1,46 @@
-import planDay from "@assets/images/planday.svg";
-import umbraco from "@assets/images/umbraco.svg";
-import pearlFisher from "@assets/images/pearlfisher.svg";
-import brightPearl from "@assets/images/brightpearl.svg";
+import { planDay, umbraco, pearlFisher, brightPearl } from "@assets/images";
 import "./Clients.scss";
 
 const Clients = () => {
+  const clientList = [
+    {
+      id: 1,
+      name: "Plan Day",
+      imgSrc: planDay,
+    },
+    {
+      id: 2,
+      name: "Umbraco",
+      imgSrc: umbraco,
+    },
+    {
+      id: 3,
+      name: "Pearl Fisher",
+      imgSrc: pearlFisher,
+    },
+    {
+      id: 4,
+      name: "Bright Pearl",
+      imgSrc: brightPearl,
+    },
+    {
+      id: 5,
+      name: "Plan Day",
+      imgSrc: planDay,
+    },
+  ];
+
   return (
     <section className="clients">
-      <figure className="clients__logo">
-        <img src={planDay} alt="Planday Logo" />
-      </figure>
-      <figure className="clients__logo">
-        <img src={umbraco} alt="Umbraco Logo" />
-      </figure>
-      <figure className="clients__logo">
-        <img src={pearlFisher} alt="Pearl Fisher Logo" />
-      </figure>
-      <figure className="clients__logo">
-        <img src={brightPearl} alt="Bright Pearl Logo" />
-      </figure>
-      <figure className="clients__logo">
-        <img src={planDay} alt="Planday Logo" />
-      </figure>
+      {clientList.map((client) => (
+        <figure className="clients__logo" key={client.id}>
+          <img
+            className="clients__logo-img"
+            src={client.imgSrc}
+            alt={`${client.name} Logo`}
+          />
+        </figure>
+      ))}
     </section>
   );
 };
