@@ -16,3 +16,14 @@
     height: 5rem;
   }
 }
+
+//********MEDIA QUERY********
+
+// Media Query for mobile devices (less than 480px)
+@include a.media-query(small) {
+  .emojis {
+    top: 47rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
