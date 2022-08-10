@@ -1,13 +1,9 @@
 import { Link } from "react-router-dom";
-import { ActiveLink } from "..";
+import { ActiveLink } from "@components/elements";
 
 const NavLinkItem = ({ item }) => {
   return (
-    <li
-      key={item}
-      className="link"
-      aria-label={`Navigation link to ${item} section`}
-    >
+    <li key={item} aria-label={`Navigation link to ${item} section`}>
       {item === "Home" ? (
         <Link to="/">{item}</Link>
       ) : (
@@ -16,4 +12,5 @@ const NavLinkItem = ({ item }) => {
     </li>
   );
 };
+
 export default NavLinkItem;
