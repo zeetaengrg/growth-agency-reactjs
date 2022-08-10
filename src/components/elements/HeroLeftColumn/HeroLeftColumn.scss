@@ -18,41 +18,38 @@
 
   &__btn {
     display: inline-flex;
-    gap: 1rem;
     max-width: fit-content;
+    gap: 1rem;
 
     .btn {
       padding: 0.75rem 1.75rem;
-      border: 1px solid transparent;
-      border-radius: 0.3rem;
       font-weight: a.$fw-medium;
       font-size: a.$fs-small;
+      border-radius: 0.3rem;
+      transition: a.$tr-primary;
       cursor: pointer;
     }
 
-    .btn__primary {
-      color: a.$secondary-clr;
+    .btn--primary {
+      color: a.$primary-clr-4;
       background: a.$bg-gradient;
-      transition: a.$tr-primary;
+      border: 1px solid transparent;
 
       &:hover {
-        background: a.$bg-gradient;
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        border: 1px solid hsla(269, 94%, 69%, 1);
+        filter: brightness(110%) contrast(1.1);
       }
     }
 
-    .btn__secondary {
-      border: 1px solid hsla(269, 94%, 69%, 1);
-      transition: a.$tr-primary;
+    .btn--secondary {
       color: a.$secondary-clr-1;
-      background: transparent;
+      border: 1px solid a.$primary-clr-3;
+      background: a.$bg-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 
       &:hover {
-        background: a.$bg-gradient;
-        color: a.$secondary-clr;
+        border: 1px solid a.$primary-clr;
       }
     }
   }
